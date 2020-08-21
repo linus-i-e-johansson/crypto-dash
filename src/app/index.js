@@ -1,10 +1,20 @@
-import React from 'react';
+import React,{Component} from 'react';
 import './App.css';
+import styled,{css} from "styled-components";
+import Welcome from "./WelcomeMessage";
 
-function Index() {
-  return (
-    <div>Hello World</div>
-  );
+
+
+class Index extends Component{
+  render(){
+    return (
+        <div>
+          <Welcome />
+
+        </div>
+
+    );
+  }
 }
 
 export default Index;
