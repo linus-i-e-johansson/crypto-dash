@@ -1,17 +1,16 @@
 import React,{Component} from 'react';
 import './App.css';
 import styled,{css} from "styled-components";
-import Welcome from "./WelcomeMessage";
-
+import AppLayout from "./AppLayout";
+import WelcomeMessage from "./WelcomeMessage";
 
 
 class Index extends Component{
   render(){
     return (
-        <div>
-          <Welcome />
-
-        </div>
+        <AppLayout>
+          <WelcomeMessage />
+        </AppLayout>
 
     );
   }
